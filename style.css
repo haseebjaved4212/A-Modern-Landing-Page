@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+#back {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+#back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* background-color: black; */
+  pointer-events: none;
+  z-index: 2;
+}
+#workingarea {
+  position: relative;
+  width: 80%;
+  max-width: 1920px;
+  height: 100vh;
+  /* background-color: #882727d8; */
+  /* border: 2px solid red; */
+  margin: auto;
+}
+#nav {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: all;
+}
+#nav img {
+  height: 50px;
+}
+
+#nleft,
+#nright {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#nleft a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#nright a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+#hero {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  display: flex;
+  justify-content: space-between;
+}
+#heroleft {
+  min-width: 50%;
+  margin-top: 70px;
+}
+#heroright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 17%;
+}
+
+#heroleft .elem h1 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-family: "kajiro";
+  font-weight: 100;
+  font-size: 10vw;
+  color: white;
+  line-height: 0.9;
+}
+#heroleft .elem {
+  position: relative;
+  height: 9vw;
+  overflow: hidden;
+}
+#heroleft .elem h1:nth-child(1) {
+  top: 0;
+}
+#heroleft button {
+  padding: 0.8vw 3vw;
+  background-color: white;
+  color: black;
+  font-size: 2vw;
+  font-family: "kajiro";
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  pointer-events: all;
+}
+#heroright p {
+  color: white;
+  font-size: 13px;
+  font-weight: 300;
+  text-align: right;
+}
+#heroright .image {
+  width: 100%;
+  height: 160px;
+  background-image: url(https://i.pinimg.com/736x/8e/5f/36/8e5f36290b83a40dc349bce9dd3281fc.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#heroright p:nth-child(1) {
+  margin-top: 70px;
+  margin-bottom: 18px;
+}
+#heroright p:nth-child(2) {
+  margin-top: 18px;
+}
+#heroright p:nth-child(3) {
+  margin-top: 20px;
+}
+#heroright p:nth-child(4) {
+  margin-top: 50px;
+}
